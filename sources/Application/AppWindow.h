@@ -50,7 +50,7 @@ public:
   static AppWindow *Create(GUICreateWindowParams &, const char *projectName);
   void LoadProject(const char *name);
   void CloseProject();
-
+  using GUIWindow::Clear;
   virtual void Clear(bool all = false);
   virtual void ClearRect(GUIRect &rect);
   virtual void SetColor(ColorDefinition cd);
